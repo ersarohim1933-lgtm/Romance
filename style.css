@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #880e4f;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.anniversary-date {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.counter-box {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 40px;
+    margin: 40px 0;
+    box-shadow: 0 15px 35px rgba(233, 30, 99, 0.1);
+}
+
+#days-counter {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #e91e63;
+    line-height: 1;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.photo-card {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+    transform: translateY(-10px) rotate(2deg);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.caption {
+    padding: 15px 0 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.love-quotes {
+    margin-top: 60px;
+    font-style: italic;
+    font-size: 1.2rem;
+}
