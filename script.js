@@ -40,3 +40,22 @@ updateLoveCounter();
 
 // Update setiap jam untuk memastikan akurasi
 setInterval(updateLoveCounter, 3600000);
+
+// Tambahkan kode ini di bagian paling bawah script.js
+const audio = document.getElementById("my-audio");
+const musicBtn = document.getElementById("music-btn");
+const musicIcon = document.getElementById("music-icon");
+
+musicBtn.addEventListener("click", function() {
+    if (audio.paused) {
+        audio.play();
+        musicIcon.classList.remove("fa-music");
+        musicIcon.classList.add("fa-pause");
+        musicBtn.classList.add("rotating");
+    } else {
+        audio.pause();
+        musicIcon.classList.remove("fa-pause");
+        musicIcon.classList.add("fa-music");
+        musicBtn.classList.remove("rotating");
+    }
+});
